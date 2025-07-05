@@ -1,0 +1,76 @@
+/* reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* fundo escuro + texto claro */
+body, html, #root {
+  height: 100%;
+  background: #0d1117;
+  color: #cdd9e5;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  scroll-behavior: smooth;
+}
+
+/* Menu fixo no topo */
+.menu {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: #161b22;
+  box-shadow: 0 2px 10px #39ff14aa;
+  z-index: 1000;
+}
+
+.menu ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 1em 0;
+  gap: 1.5rem;
+}
+
+.menu button {
+  background: none;
+  border: none;
+  color: #39ff14;
+  font-weight: 700;
+  font-size: 1rem;
+  cursor: pointer;
+  padding: 0.5em 1em;
+  transition: color 0.3s ease;
+}
+
+.menu button:hover,
+.menu button.active {
+  color: #6e56cf;
+  text-shadow: 0 0 8px #6e56cf;
+}
+
+/* Espaço para o menu fixo */
+main {
+  padding-top: 60px;
+}
+
+/* Seções */
+.section {
+  min-height: 100vh;
+  padding: 3rem 1.5rem;
+  max-width: 900px;
+  margin: auto;
+  border-bottom: 1px solid #2c313c;
+}
+
+.section h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  color: #39ff14;
+  text-shadow: 0 0 10px #39ff14;
+}
+
+.section p {
+  font-size: 1.2rem;
+  color: #a2a9b0;
+}
