@@ -18,3 +18,13 @@
 .imagem-animada {
   animation: flutuarEntrando 2.5s ease-out forwards;
 }
+
+
+@media (max-width: 600px) {
+  .typewriter-mobile-break {
+    display: block;
+    text-align: center;
+    white-space: normal;
+    word-break: break-word;
+  }
+}

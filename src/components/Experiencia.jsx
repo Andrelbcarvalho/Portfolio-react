@@ -160,12 +160,12 @@ export default function Experiencia() {
       <motion.div
         initial={{ opacity: 0, y: 30 }}
         whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.8, delay: experiencias.length * 0.3 }}
+        transition={{ duration: 0.5, delay: experiencias.length * 0.2 }}
         viewport={{ amount: 0.4 }}
         style={{ textAlign: "center", marginTop: "40px", position: "relative", zIndex: 2 }}
       >
         <a
-          href="/curriculo-andre.pdf"
+          href="/Portfolio-react/curriculo-andre.pdf"
           download
           style={{
             display: "inline-block",

@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 
 export default function Contato() {
   const estiloContainer = {
-    padding: "80px 20px",
+    padding: "50px 20px",
     backgroundColor: "transparent",
     color: "#39ff14",
     textAlign: "center",
@@ -13,33 +13,37 @@ export default function Contato() {
     display: "flex",
     flexDirection: "column",
     alignItems: "center",
-    gap: 30,
+    gap: 50,
   };
 
   const estiloIconesContainer = {
-    display: "flex",
-    gap: 40,
-    justifyContent: "center",
-  };
+  display: "flex",
+  gap: 20,               // menor gap para caber mais no mobile
+  justifyContent: "center",
+  flexWrap: "wrap",      // permite quebrar para outra linha no mobile
+};
 
-  const estiloItem = {
-    display: "flex",
-    flexDirection: "column",
-    alignItems: "center",
-    cursor: "pointer",
-    color: "#39ff14",
-    textShadow: "0 0 10px #39ff14",
-    fontSize: "2.5rem",
-    textDecoration: "none",
-    width: 90,
-    transition: "transform 0.3s ease, box-shadow 0.3s ease, color 0.3s ease",
-  };
+const estiloItem = {
+  display: "flex",
+  flexDirection: "column",
+  alignItems: "center",
+  cursor: "pointer",
+  color: "#39ff14",
+  textShadow: "0 0 10px #39ff14",
+  fontSize: "clamp(1.8rem, 4vw, 2.5rem)", // responsivo
+  textDecoration: "none",
+  minWidth: 70,          // mínimo para ícone ficar bonitão, mas flexível
+  padding: "0 10px",     // espaçamento horizontal
+  transition: "transform 0.3s ease, box-shadow 0.3s ease, color 0.3s ease",
+};
 
-  const estiloTexto = {
-    marginTop: 8,
-    fontSize: "1rem",
-    fontWeight: "600",
-  };
+const estiloTexto = {
+  marginTop: 8,
+  fontSize: "clamp(0.8rem, 3vw, 1rem)", // texto responsivo
+  fontWeight: "600",
+  whiteSpace: "nowrap",                  // não quebrar texto (opcional)
+};
+
 
   // Variants para animar cada ícone chegando de baixo com fade-in
   const itemVariants = {

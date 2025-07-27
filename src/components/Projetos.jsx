@@ -56,7 +56,7 @@ export default function Projetos() {
           overflowX: "auto",
           paddingTop: "30px",
           paddingBottom: "20px",
-          paddingLeft: "40px",
+          paddingLeft: "20px",
           paddingRight: "40px",
         }}
       >
@@ -65,7 +65,7 @@ export default function Projetos() {
           style={{
             display: "flex",
             gap: "20px",
-            maxWidth: "1200px",
+            maxWidth: "2000px",
             margin: "0 auto",
             justifyContent: "flex-start",
           }}
